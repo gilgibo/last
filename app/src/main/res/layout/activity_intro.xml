@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gibo.termproject.ResumeActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <Button
+            android:id="@+id/prev"
+            android:enabled="false"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="이전 인물"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다음 인물"
+            android:onClick="onClick" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img"
+            android:scaleType="fitXY"
+            android:background="@drawable/intro1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:gravity="bottom"
+            android:textSize="25dp"
+            android:textColor="#00ffea"
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="미운 오리 새끼
+            \n\n
+자기가 나중에 백조가 될지 모르고\n
+항상 기가 죽어 있다.
+\n"/>
+
+    </FrameLayout>
+
+</LinearLayout>

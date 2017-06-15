@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gibo.termproject.Story1Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <Button
+            android:id="@+id/btnprev"
+            android:layout_width="178dp"
+            android:layout_height="50dp"
+            android:background="@drawable/pre_btnimg"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/btnnext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/next_btnimg"
+            android:onClick="onClick" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/background"
+            android:scaleType="fitXY"
+            android:background="@drawable/story1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_gravity="top|center"
+            android:id="@+id/story"
+            android:layout_width="match_parent"
+            android:layout_height="411dp"
+            android:text=" 귀여운 오리로 태어난 다른 형제들과는 \n 달리 남달리 크고 볼품없이 태어났습니다"/>
+    </FrameLayout>
+
+</LinearLayout>

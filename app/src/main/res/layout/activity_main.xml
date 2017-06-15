@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gibo.termproject.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnstart"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/woodplate"
+            android:onClick="onClick"
+            android:text="시작하기" />
+
+        <Button
+            android:id="@+id/btnintro"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/woodplate"
+            android:onClick="onClick"
+            android:text="등장인물 소개" />
+
+
+        <Button
+            android:onClick="onClick"
+            android:background="@drawable/woodplate"
+            android:id="@+id/btnrestart"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="불러오기" />
+
+        <Button
+            android:onClick="onClick"
+            android:background="@drawable/woodplate"
+            android:id="@+id/btnhomepage"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="다른 동화책 홈페이지" />
+
+        <Button
+            android:onClick="onClick"
+            android:background="@drawable/woodplate"
+            android:id="@+id/btnexit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="종료" />
+    </LinearLayout>
+
+
+</LinearLayout>
